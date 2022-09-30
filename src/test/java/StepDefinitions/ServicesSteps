@@ -1,0 +1,181 @@
+package StepDefinitions;
+
+import Pages.CommonElements;
+import Utilities.GWD;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import java.awt.datatransfer.StringSelection;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+
+public class ServicesSteps extends GWD {
+    CommonElements cm=new CommonElements();
+    @And("Click on the button Services")
+    public void clickOnTheButtonServices() throws AWTException {
+        Robot rbt=new Robot();
+        Bekle(2);
+        for (int i=0;i<2;i++) {
+            rbt.keyPress(KeyEvent.VK_TAB);
+            rbt.keyRelease(KeyEvent.VK_TAB);
+
+        }
+        rbt.keyPress(KeyEvent.VK_ENTER);
+        rbt.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+
+
+
+    @And("Click on the button services elements of SaaSDevelopment")
+    public void clickOnTheButtonServicesElementsOfSaaSDevelopment()throws AWTException {
+        Robot rbt=new Robot();
+        Bekle(2);
+        for (int i=0;i<1;i++) {
+            rbt.keyPress(KeyEvent.VK_TAB);
+            rbt.keyRelease(KeyEvent.VK_TAB);
+
+        }
+        rbt.keyPress(KeyEvent.VK_ENTER);
+        rbt.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+    @Then("Find the string onthe SaaSDevelopment Successfully result check")
+    public void findTheStringOntheSaaSDevelopmentSuccessfullyResultCheck() throws IOException {
+        LocalDateTime anlikTarih= LocalDateTime.now();
+        DateTimeFormatter ozelFormat=DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss:ms");
+        String fotoName="ekranGoruntuleri/"+anlikTarih.format(ozelFormat);
+        fotoName=fotoName.replace(".","");
+        fotoName=fotoName.replace(":","");
+        fotoName=fotoName.replace(" ","");
+        fotoName=fotoName+".png";
+        cm.find("SaaSDevelopmentCheck");
+        TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
+        File hafizadakiHali=ts.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(hafizadakiHali,new File(fotoName));
+
+
+    }
+
+    @And("Click on the button services elements Mobile App Development")
+    public void clickOnTheButtonServicesElementsMobileAppDevelopment() throws AWTException{
+        Robot rbt=new Robot();
+        Bekle(2);
+        for (int i=0;i<2;i++) {
+            rbt.keyPress(KeyEvent.VK_TAB);
+            rbt.keyRelease(KeyEvent.VK_TAB);
+
+        }
+        rbt.keyPress(KeyEvent.VK_ENTER);
+        rbt.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+    @Then("Find the string on the Mobile App Development Successfully result check")
+    public void findTheStringOnTheMobileAppDevelopmentSuccessfullyResultCheck() throws IOException {
+        LocalDateTime anlikTarih= LocalDateTime.now();
+        DateTimeFormatter ozelFormat=DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss:ms");
+        String fotoName="ekranGoruntuleri/"+anlikTarih.format(ozelFormat);
+        fotoName=fotoName.replace(".","");
+        fotoName=fotoName.replace(":","");
+        fotoName=fotoName.replace(" ","");
+        fotoName=fotoName+".png";
+        cm.find("MobileAppDevelopmentCheck");
+        TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
+        File hafizadakiHali=ts.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(hafizadakiHali,new File(fotoName));
+    }
+
+    @And("Click on the button services elements DevOps & Cloud Consulting")
+    public void clickOnTheButtonServicesElementsDevOpsCloudConsulting() throws AWTException{
+        Robot rbt=new Robot();
+        Bekle(2);
+        for (int i=0;i<3;i++) {
+            rbt.keyPress(KeyEvent.VK_TAB);
+            rbt.keyRelease(KeyEvent.VK_TAB);
+
+        }
+        rbt.keyPress(KeyEvent.VK_ENTER);
+        rbt.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+    @Then("Find the string on the DevOps & Cloud Consulting Successfully result check")
+    public void findTheStringOnTheDevOpsCloudConsultingSuccessfullyResultCheck()throws IOException {
+        LocalDateTime anlikTarih= LocalDateTime.now();
+        DateTimeFormatter ozelFormat=DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss:ms");
+        String fotoName="ekranGoruntuleri/"+anlikTarih.format(ozelFormat);
+        fotoName=fotoName.replace(".","");
+        fotoName=fotoName.replace(":","");
+        fotoName=fotoName.replace(" ","");
+        fotoName=fotoName+".png";
+        cm.find("DevOpsCheck");
+        TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
+        File hafizadakiHali=ts.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(hafizadakiHali,new File(fotoName));
+    }
+
+    @And("Click on the button services elements Quality Assurance")
+    public void clickOnTheButtonServicesElementsQualityAssurance() throws AWTException{
+        Robot rbt=new Robot();
+        Bekle(2);
+        for (int i=0;i<4;i++) {
+            rbt.keyPress(KeyEvent.VK_TAB);
+            rbt.keyRelease(KeyEvent.VK_TAB);
+
+        }
+        rbt.keyPress(KeyEvent.VK_ENTER);
+        rbt.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+    @Then("Find the string on the Quality Assurance Successfully result check")
+    public void findTheStringOnTheQualityAssuranceSuccessfullyResultCheck() throws IOException {
+        LocalDateTime anlikTarih= LocalDateTime.now();
+        DateTimeFormatter ozelFormat=DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss:ms");
+        String fotoName="ekranGoruntuleri/"+anlikTarih.format(ozelFormat);
+        fotoName=fotoName.replace(".","");
+        fotoName=fotoName.replace(":","");
+        fotoName=fotoName.replace(" ","");
+        fotoName=fotoName+".png";
+        cm.find("QualityAssuranceCheck");
+        TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
+        File hafizadakiHali=ts.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(hafizadakiHali,new File(fotoName));
+    }
+
+    @And("Click on the button services elements IT Consulting")
+    public void clickOnTheButtonServicesElementsITConsulting() throws AWTException{
+        Robot rbt=new Robot();
+        Bekle(2);
+        for (int i=0;i<5;i++) {
+            rbt.keyPress(KeyEvent.VK_TAB);
+            rbt.keyRelease(KeyEvent.VK_TAB);
+
+        }
+        rbt.keyPress(KeyEvent.VK_ENTER);
+        rbt.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+    @Then("Find the string on the IT Consulting Successfully result check")
+    public void findTheStringOnTheITConsultingSuccessfullyResultCheck() throws IOException {
+        LocalDateTime anlikTarih= LocalDateTime.now();
+        DateTimeFormatter ozelFormat=DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss:ms");
+        String fotoName="ekranGoruntuleri/"+anlikTarih.format(ozelFormat);
+        fotoName=fotoName.replace(".","");
+        fotoName=fotoName.replace(":","");
+        fotoName=fotoName.replace(" ","");
+        fotoName=fotoName+".png";
+        cm.find("ITConsultingCheck");
+        TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
+        File hafizadakiHali=ts.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(hafizadakiHali,new File(fotoName));
+    }
+}
