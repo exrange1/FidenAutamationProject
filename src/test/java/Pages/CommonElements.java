@@ -111,7 +111,14 @@ public class CommonElements extends Parent {
         findAndClick("");// silme butonua bas
         findAndClick("");// dilogdaki silme butonuna bas
     }
-
+ public void find(String strElement) {
+        switch (strElement) {
+            case "SaaSDevelopmentCheck": myElement = SaaSDevelopmentCheck;break;
+            case "MobileAppDevelopmentCheck":myElement=MobileAppDevelopmentCheck;break;
+            case "DevOpsCheck":myElement=DevOpsCheck;break;
+            case "QualityAssuranceCheck":myElement=QualityAssuranceCheck;break;
+            case "ITConsultingCheck":myElement=ITConsultingCheck;break;
+        }
 
 
 
