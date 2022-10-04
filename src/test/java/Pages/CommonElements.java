@@ -92,10 +92,8 @@ public class CommonElements extends Parent {
 
     public void findAndContainsText(String strElement, String text){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
-        switch (strElement)
-        {
-            case "succesCheck":myElement=succesCheck;break;
-
+        if ("succesCheck".equals(strElement)) {
+            myElement = succesCheck;
         }
 
         verifyContainsText(myElement,text);
@@ -111,14 +109,14 @@ public class CommonElements extends Parent {
         findAndClick("");// silme butonua bas
         findAndClick("");// dilogdaki silme butonuna bas
     }
- public void find(String strElement) {
-        switch (strElement) {
-            case "SaaSDevelopmentCheck": myElement = SaaSDevelopmentCheck;break;
-            case "MobileAppDevelopmentCheck":myElement=MobileAppDevelopmentCheck;break;
-            case "DevOpsCheck":myElement=DevOpsCheck;break;
-            case "QualityAssuranceCheck":myElement=QualityAssuranceCheck;break;
-            case "ITConsultingCheck":myElement=ITConsultingCheck;break;
-        }
+// public void find(String strElement) {
+//        switch (strElement) {
+//            case "SaaSDevelopmentCheck": myElement = SaaSDevelopmentCheck;break;
+//            case "MobileAppDevelopmentCheck":myElement=MobileAppDevelopmentCheck;break;
+//            case "DevOpsCheck":myElement=DevOpsCheck;break;
+//            case "QualityAssuranceCheck":myElement=QualityAssuranceCheck;break;
+//            case "ITConsultingCheck":myElement=ITConsultingCheck;break;
+//        }
 
 
 
